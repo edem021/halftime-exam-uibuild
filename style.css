@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  border: 0;
+}
+
+body {
+  background-color: #C0EBF9;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+}
+#root form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+#root form h1 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #467745;
+}
+#root form input[type=text] {
+  width: 100%;
+  max-width: 600px;
+  height: 64px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #467745;
+}
+#root form input[type=text]::-moz-placeholder {
+  padding: 15px;
+  color: rgba(70, 119, 69, 0.4745098039);
+}
+#root form input[type=text]::placeholder {
+  padding: 15px;
+  color: rgba(70, 119, 69, 0.4745098039);
+}
+#root form textarea {
+  width: 100%;
+  max-width: 600px;
+  height: 120px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #467745;
+  resize: none;
+}
+#root form textarea::-moz-placeholder {
+  padding: 20px 15px;
+  color: rgba(70, 119, 69, 0.4745098039);
+}
+#root form textarea::placeholder {
+  padding: 20px 15px;
+  color: rgba(70, 119, 69, 0.4745098039);
+}
+#root form label {
+  font-weight: 400;
+  font-size: 16px;
+  color: #467745;
+}
+#root form button {
+  width: 100%;
+  max-width: 280px;
+  height: 80px;
+  font-weight: 700;
+  font-size: 21px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background-color: #467745;
+  color: #C0EBF9;
+}
+#root form .checkbox-container {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  padding-left: 50px;
+}
+#root form .checkbox-container input[type=checkbox] {
+  min-width: 20px;
+  height: 20px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: white;
+}
+#root form .checkbox-container input[type=checkbox]:checked {
+  background-color: #467745;
+}
+
+@media screen and (max-width: 640px) {
+  #root form h1 {
+    width: 100%;
+    text-align: left;
+    padding: 0 20px;
+  }
+  #root form .checkbox-container {
+    padding: 0 20px;
+  }
+  #root form input[type=text] {
+    width: calc(100% - 40px);
+  }
+  #root form textarea {
+    width: calc(100% - 40px);
+  }
+}/*# sourceMappingURL=style.css.map */
